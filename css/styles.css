@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Elemente vertikal anordnen */
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 5;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2px; /* Abstand zum Bild */
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin: 2px 0;
+}
+
+.star {
+    font-size: 65px; /* Größere Sterne */
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star.selected {
+    color: #f39c12;
+}
+
+/* Bildstil */
+#meinBild {
+    width: 100%;
+    height: 25vh; /* Höhe des Bildes auf die Hälfte des Viewports setzen */
+    display: block;
+    margin: 0 auto; /* Bild zentrieren */
+}
+
+/* Eingabefelderstil */
+.Eingabefeld-Name,
+.Eingabefeld-Kilometerstand {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center; /* Text zentrieren */
+}
+
+.Eingabefeld-Name input,
+.Eingabefeld-Kilometerstand input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Textboxstil */
+.textbox-container {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center; /* Text zentrieren */
+}
+
+#textbox {
+    width: 100%; /* Breite der Textbox auf 100% des Containers setzen */
+    height: 150px; /* Höhe der Textbox auf 150px setzen */
+    font-size: 16px; /* Schriftgröße anpassen */
+    padding: 10px; /* Innenabstand hinzufügen */
+    box-sizing: border-box; /* Box-Modell anpassen, um Padding und Border in die Gesamtgröße einzubeziehen */
+    resize: vertical; /* Benutzer kann die Höhe der Textbox ändern */
+}
+
+.textbox-container label {
+    display: block;
+    text-align: center; /* Überschrift zentrieren */
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 0px; /* Abstand zur Textbox */
+}
+
+/* Buttonstil */
+#saveButton {
+    background-color: #b1e2b3; /* Hintergrundfarbe */
+    color: #c40000; /* Textfarbe */
+    padding: 10px 15px; /* Innenabstand */
+    text-align: center; /* Text zentrieren */
+    text-decoration: none; /* Keine Unterstreichung */
+    display: inline-block; /* Inline-Block-Element */
+    font-size: 25px; /* Schriftgröße */
+    margin: 4px 2px; /* Außenabstand */
+    cursor: pointer; /* Mauszeiger ändern */
+    border: none; /* Kein Rahmen */
+    border-radius: 12px; /* Abgerundete Ecken */
+    transition: background-color 0.3s; /* Übergangseffekt */
+}
+
+#saveButton:hover {
+    background-color: #45a049; /* Hintergrundfarbe beim Hover */
+}
