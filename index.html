@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sternebewertung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Bild hinzufügen -->
+    <img src="Transporter.jpg" alt="Beschreibung des Bildes" id="meinBild">
+    <div class="Eingabefeld-Name">
+<!--         <label for="name">Name:</label> -->
+        <input type="text" id="name" placeholder="Dein Name">
+    </div>
+    <div class="Eingabefeld-Kilometerstand">
+<!--         <label for="kilometerstand">Kilometerstand:</label> -->
+        <input type="number" id="kilometerstand" placeholder="Kilometerstand">
+    </div>
+    <div class="container">
+        <h1>Bewerte den Zustand des Fahrzeugs</h1>
+        <div class="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <button id="saveButton" onclick="saveRating()">Bewertung speichern</button>
+    </div>
+    <!-- Textbox hinzufügen -->
+    <div class="textbox-container">
+        <label for="textbox">Anmerkungen zum Zustand:</label>
+        <textarea id="textbox" name="textbox" rows="10" cols="50"></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
